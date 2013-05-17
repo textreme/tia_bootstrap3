@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    {% include sub-header.html %}
+    <!-- Place anything custom after this. -->
+  </head>
+  <body class="sub-docs" data-spy="scroll" data-target=".sub-sidebar">
+
+    <!-- Docs nav -->
+    {% include sub-nav.html %}
+
+    <!-- Page content of course! -->
+    {{ content }}
+
+    <!-- Main docs footer (social buttons, copyright, etc). -->
+    {% include sub-colophon.html %}
+
+    <!-- JS and analytics only. -->
+    {% include sub-footer.html %}
+
+  </body>
+</html>

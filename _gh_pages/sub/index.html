@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>
+  
+    sub &middot; Bootstrap
+  
+</title>
+
+<!-- Bootstrap core CSS -->
+<link href="/assets/css/bootstrap.css" rel="stylesheet">
+
+
+<!-- Documentation extras -->
+<link href="/assets/css/sub.css" rel="stylesheet">
+<link href="/assets/css/pygments-manni.css" rel="stylesheet">
+
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="/assets/js/html5shiv.js"></script>
+  <script src="/assets/js/respond/respond.min.js"></script>
+<![endif]-->
+
+<!-- Favicons -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="/assets/ico/apple-touch-icon-57-precomposed.png">
+<link rel="shortcut icon" href="/assets/ico/favicon.png">
+
+<script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax:{inlineMath:[['$$$','$$$']]}});</script>
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-146052-10']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+    <!-- Place anything custom after this. -->
+  </head>
+  <body class="sub-docs" data-spy="scroll" data-target=".sub-sidebar">
+
+    <!-- Docs nav -->
+    <div class="sub-sidebar">
+  <ul class="nav sub-sidenav">
+    <h3 class="sub-sidenav-heading"><a href="/">Home</a></h3>
+
+    <li><a class="nav-header" href="#sat">SAT</a></li>
+    <li><a href="#getting-started">Getting started</a></li>
+    <li><a href="#info">Test Info</a></li>
+    <li><a href="#register">Taking the Test</a></li>
+
+    <!-- SAT Math -->
+    <li><a class="nav-header" href="#sat-math">SAT Math</a></li>
+    <li><a href="#sat-math-overview">Overview</a></li>
+    <li><a href="#numbers-operations">Numbers & Operations</a></li>
+    <li><a href="#algebra-functions">Algebra & Functions</a></li>
+    <li><a href="#geometry-measurement">Geometry & Measurement</a></li>
+    <li><a href="#data-statistics-probability">Data, Statistics, & Probability</a></li>
+
+    <!-- SAT Critical Reading -->
+    <li><a class="nav-header" href="#sat-reading">SAT Critical Reading</a></li>
+    <li><a href="#sat-reading-overview">Overview</a></li>
+    <li><a href="#sentence-completion">Sentence Completion</a></li>
+    <li><a href="#vocabulary">Vocabulary</a></li>
+    <li><a href="#passage-based-reading">Passage-based Reading</a></li>
+
+    <!-- SAT Writing -->
+    <li><a class="nav-header" href="#sat-writing">SAT Writing</a></li>
+    <li><a href="#sat-writing-overview">Overview</a></li>
+    <li><a href="#essay">Essay</a></li>
+    <li><a href="#improving-sentences">Improving Sentences</a></li>
+    <li><a href="#identifying-sentence-errors">Identifying Sentence Errors</a></li>
+    <li><a href="#improving-paragraphs">Improving Paragraphs</a></li>
+  </ul>
+</div>
+
+
+    <!-- Page content of course! -->
+    <div class="sub-container">
+
+  <!-- Welcome
+  ================================================== -->
+  <div id="sat" class="sub-section-header">
+    <h1>SAT</h1>
+    <p class="lead">Welcome to the Bootstrap documentation, the living, interactive style and code guide for all things Bootstrap. If you're new here, continue reading to learn how to get started. Otherwise, carry on you beautiful person you.</p>
+  </div>
+
+  <!-- Getting started
+  ================================================== -->
+  <div class="sub-section" id="getting-started">
+    <div class="page-header">
+      <h1>Getting started</h1>
+    </div>
+
+  <div class="row">
+    <div class="col col-lg-4">
+      <div class="thumbnail">
+        <img data-src="holder.js/300x200" alt="">
+        <div class="caption text-center">
+          <h3>Sign Up</h3>
+          <p>The site is free. Sign up to keep track of your progress. With a user account, you can access the g•nēus network and get help.</p>
+          <button type="button" class="btn btn-large btn-block btn-primary" href="https://satonlinecourse.collegeboard.org/SR/digital_assets/assessment/pdf/0833A611-0A43-10C2-0148-CC8C0087FB06-F.pdf">Sign Up</button>
+          <button type="button" class="btn btn-large btn-block btn" href="http://amzn.com/0874478529">Sign In</button>
+        </div>
+      </div>
+    </div>
+    <div class="col col-lg-4">
+      <div class="thumbnail">
+        <img data-src="holder.js/300x200" alt="">
+        <div class="caption text-center">
+          <h3>Take Real Practice Tests</h3>
+          <p>These tests are written and published by the College Board, consisting of test questions from past test dates. Therefore, they are the most accurate test questions available, and will provide you with the most accurate score prediction.</p>
+          <button type="button" class="btn btn-large btn-block btn-warning">Official 2013-2014 Pre-Test</button>
+          <button type="button" class="btn btn-large btn-block btn-primary">10 Official SAT Practice Tests</button>
+        </div>
+      </div>
+    </div>
+    <div class="col col-lg-4">
+      <div class="thumbnail">
+        <img data-src="holder.js/300x200" alt="">
+        <div class="caption text-center">
+          <h3>Take Real Practice Tests</h3>
+          <p>These tests are written and published by the College Board, consisting of test questions from past test dates. Therefore, they are the most accurate test questions available, and will provide you with the most accurate score prediction.</p>
+          <button type="button" class="btn btn-large btn-block btn-warning">Official 2013-2014 Pre-Test</button>
+          <button type="button" class="btn btn-large btn-block btn-primary">10 Official SAT Practice Tests</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Test Info
+  ================================================== -->
+  <div class="sub-section" id="info">
+    <div class="page-header">
+      <h1>Test Info</h1>
+    </div>
+
+    <div class="sub-sidenote">
+      <h4>Notice</h4>
+      <p>Please note that <strong>all information</strong> can be found on <a href="#">The College Board</a> website.</p> 
+    </div>
+
+    <h2>Time</h2>
+
+    <h2>Scoring</h2>
+
+    <h2>Breakdown</h2>
+
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th class="text-center">Subject</th>
+          <th class="text-center"># of Sections</th>
+          <th class="text-center"># of Questions</th>
+          <th class="text-center">Total Time</th>
+          <th class="text-center">Score Range</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th class="text-center">Essay</th>
+          <td class="text-center">1</td>
+          <td class="text-center">1</td>
+          <td class="text-center">25 minutes</td>
+          <td class="text-center">2-12</td>
+        </tr>
+        <tr>
+          <th class="text-center">Math</th>
+          <td class="text-center">3</td>
+          <td class="text-center">54</td>
+          <td class="text-center">1 hour 10 minutes</td>
+          <td class="text-center">200-800</td>
+        </tr>
+        <tr>
+          <th class="text-center">Reading</th>
+          <td class="text-center">3</td>
+          <td class="text-center">67</td>
+          <td class="text-center">1 hour 10 minutes</td>
+          <td class="text-center">200-800</td>
+        </tr>
+        <tr>
+          <th class="text-center">Writing</th>
+          <td class="text-center">2</td>
+          <td class="text-center">49</td>
+          <td class="text-center">35 minutes</td>
+          <td class="text-center">20-80</td>
+        </tr>
+        <tr>
+          <th class="text-center"><em>Unscored*</em></th>
+          <td class="text-center">1</td>
+          <td class="text-center">n/a</td>
+          <td class="text-center">25 minutes</td>
+          <td class="text-center">n/a</td>
+        </tr>
+        <tr>
+          <th class="text-center">TOTAL</th>
+          <td class="text-center">10</td>
+          <td class="text-center"></td>
+          <td class="text-center">3 hours 45 minutes<br>+ Three 5 minute breaks</td>
+          <td class="text-center">600-2400</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h5><em>*Unscored Section</em>: An extra 25-minute critical reading, mathematics or writing multiple choice section that <strong>does not count toward your score</strong>. The College Board administers this section to try out new questions for future tests.</h5>
+
+  </div>
+
+  <!-- Taking the test
+  ================================================== -->
+  <div class="sub-section" id="register">
+    <div class="page-header">
+      <h1>Taking the Test</h1>
+    </div>
+
+    <div class="sub-sidenote">
+      <h4>Register</h4>
+      <p>You must make an account and register with the College Board.</p> 
+    </div>
+
+    <h2 id="download-options">Timeline</h2>
+    <div>
+
+    <ul class="the-icons clearfix">
+      <li><h4>2013-2014</h4><h4>Test Dates</h4></li>
+      <li><h4>October</h4></li>
+      <li><h4>November</h4></li>
+      <li><h4>December</h4></li>
+      <li><h4>January</h4></li>
+      <li><h4>March</h4></li>
+      <li><h4>May</h4></li>
+      <li><h4>June</h4></li>
+    </ul>
+
+    </div>
+
+    <h2 id="download-options">Register</h2>
+    <div>
+      <p>*For <strong>January</strong>, <strong>May</strong>, <strong>October</strong> test dates, order the <a href"#">SAT Question and Answer Service (QAS)</a> for $18 at time of registration. This service provides you with the test that you took, your answers, and the correct answers. This service is helpful if you plan on improving your score for the next test.</p>
+    </div>
+
+    <h2 id="download-options">Score Choice</h2>
+    <p></p>
+
+    </div>
+
+  <!-- SAT Math
+  ================================================== -->
+
+  <div class="sub-section-header" id="sat-math">
+    <h1>SAT Math</h1>
+    <p class="lead">Fundamental HTML elements styled and enhanced with extensible classes.</p>
+  </div>
+
+  <!-- SAT Math Overview
+  ================================================== -->
+  <div class="sub-section" id="sat-math-overview">
+    <div class="page-header">
+      <h1>Overview</h1>
+    </div>
+    <p class="lead">Sprint. Micro strategies. Question Types. Pattern Matching. Set Ups.</p>
+
+
+  </div>
+
+
+
+  <!--  Numbers and Operations
+  ================================================== -->
+  <div class="sub-section" id="numbers-operations">
+    <div class="page-header">
+      <h1>Numbers and Operations</h1>
+    </div>
+    <div class="sub-sidenote">
+      <h4>No matrix operations</h4>
+    </div>
+
+  <div class="panel">
+    <div class="row">
+      <div class="col col-lg-3">
+        <a href="/sat/integers/" class="thumbnail" >
+          <h3 class="text-center">Integers</h3>
+        </a>
+      </div>
+      <div class="col col-lg-3">
+        <a href="#" class="thumbnail">
+          <h3 class="text-center">Number Lines</h3>
+        </a>
+      </div>
+      <div class="col col-lg-3">
+        <a href="#" class="thumbnail">
+          <h3 class="text-center">Arithmetic Word Problems</h3>
+        </a>
+      </div>
+      <div class="col col-lg-3">
+        <a href="#" class="thumbnail">
+          <h3 class="text-center">Elementary Number Theory</h3>
+          <h4 class="text-center">Factors, Multiples, Primes</h4>
+        </a>
+      </div>
+      <div class="col col-lg-3">
+        <a href="#" class="thumbnail">
+          <h3 class="text-center">Remainders</h3>
+        </a>
+      </div>
+      <div class="col col-lg-3">
+        <a href="#" class="thumbnail">
+          <h3 class="text-center">Exponents & Roots</h3>
+        </a>
+      </div>
+      <div class="col col-lg-3">
+        <a href="#" class="thumbnail">
+          <h3 class="text-center">Fractions</h3>
+        </a>
+      </div>
+      <div class="col col-lg-3">
+        <a href="#" class="thumbnail">
+          <h3 class="text-center">Decimals</h3>
+        </a>
+      </div>
+      <div class="col col-lg-3">
+        <a href="#" class="thumbnail">
+          <h3 class="text-center">Ratios</h3>
+        </a>
+      </div>
+      <div class="col col-lg-3">
+        <a href="#" class="thumbnail">
+          <h3 class="text-center">Proportions</h3>
+        </a>
+      </div>
+      <div class="col col-lg-3">
+        <a href="#" class="thumbnail">
+          <h3 class="text-center">Percents</h3>
+        </a>
+      </div>
+      <div class="col col-lg-3">
+        <a href="#" class="thumbnail">
+          <h3 class="text-center">Sequences</h3>
+        </a>
+      </div>
+      <div class="col col-lg-3">
+        <a href="#" class="thumbnail">
+          <h3 class="text-center">Sets</h3>
+        </a>
+      </div>
+      <div class="col col-lg-3">
+        <a href="#" class="thumbnail">
+          <h3 class="text-center">Counting Problems</h3>
+          <h4 class="text-center">Fundamental Counting Principle, Combinations, Permutations</h4>
+        </a>
+      </div>
+      <div class="col col-lg-3">
+        <a href="#" class="thumbnail">
+          <h3 class="text-center">Logical Reasoning</h3>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  </div>
+
+
+
+  <!-- Algebra and Functions
+  ================================================== -->
+  <div class="sub-section" id="algebra-functions">
+    <div class="page-header">
+      <h1>Algebra and Functions</h1>
+    </div>
+
+    <p class="lead">Get the lowdown on the key pieces of Bootstrap's infrastructure, including our approach to better, faster, stronger web development.</p>
+
+    <div class="sub-sidenote">
+      <h4>No complex numbers, logarithms, trigonometry.</h4>
+    </div>
+
+  <div class="panel">
+    <div class="row">
+      <div class="col col-lg-3">
+        <a href="#" class="thumbnail">
+          <h3 class="text-center">Operations on Algebraic Expressions</h3>
+        </a>
+      </div>
+      <div class="col col-lg-3">
+        <a href="#" class="thumbnail">
+          <h3 class="text-center">Translating from English to Math</h3>
+        </a>
+      </div>
+      <div class="col col-lg-3">
+        <a href="#" class="thumbnail">
+          <h3 class="text-center">Two Variable</h3>
+        </a>
+      </div>
+      <div class="col col-lg-3">
+        <a href="#" class="thumbnail">
+          <h3 class="text-center">In Terms Of</h3>
+        </a>
+      </div>
+      <div class="col col-lg-3">
+        <a href="#" class="thumbnail">
+          <h3 class="text-center">Linear</h3>
+          <h4 class="text-center">+graph</h4>
+        </a>
+      </div>
+      <div class="col col-lg-3">
+        <a href="#" class="thumbnail">
+          <h3 class="text-center">Linear</h3>
+          <h4 class="text-center">Systems</h4>
+        </a>
+      </div>
+      <div class="col col-lg-3">
+        <a href="#" class="thumbnail">
+          <h3 class="text-center">Inequalities</h3>
+        </a>
+      </div>
+      <div class="col col-lg-3">
+        <a href="#" class="thumbnail">
+          <h3 class="text-center">Absolute Value</h3>
+        </a>
+      </div>
+      <div class="col col-lg-3">
+        <a href="#" class="thumbnail">
+          <h3 class="text-center">Rational</h3>
+        </a>
+      </div>
+      <div class="col col-lg-3">
+        <a href="#" class="thumbnail">
+          <h3 class="text-center">Quadratic</h3>
+          <h4 class="text-center">+graph</h4>
+        </a>
+      </div>
+      <div class="col col-lg-3">
+        <a href="#" class="thumbnail">
+          <h3 class="text-center">Radical</h3>
+        </a>
+      </div>
+      <div class="col col-lg-3">
+        <a href="#" class="thumbnail">
+          <h3 class="text-center">Direct/Inverse Variation</h3>
+        </a>
+      </div>
+      <div class="col col-lg-3">
+        <a href="#" class="thumbnail">
+          <h3 class="text-center">Word Problems</h3>
+        </a>
+      </div>
+      <div class="col col-lg-3">
+        <a href="#" class="thumbnail">
+          <h3 class="text-center">Function</h3>
+          <h4 class="text-center">Evaluation</h4>
+        </a>
+      </div>
+      <div class="col col-lg-3">
+        <a href="#" class="thumbnail">
+          <h3 class="text-center">Function</h3>
+          <h4 class="text-center">Symbols</h4>
+        </a>
+      </div>
+      <div class="col col-lg-3">
+        <a href="#" class="thumbnail">
+          <h3 class="text-center">Function</h3>
+          <h4 class="text-center">Graphs</h4>
+        </a>
+      </div>
+      <div class="col col-lg-3">
+        <a href="#" class="thumbnail">
+          <h3 class="text-center">Function Graphs</h3>
+          <h4 class="text-center">Translations, Transformations</h4>
+        </a>
+      </div>
+      <div class="col col-lg-3">
+        <a href="#" class="thumbnail">
+          <h3 class="text-center">Function Models</h3>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- Geometry and Measurement
+  ================================================== -->
+  <div class="sub-section" id="geometry-measurement">
+    <div class="page-header">
+      <h1>Geometry and Measurement</h1>
+    </div>
+
+  <div class="panel">
+    <div class="row">
+      <div class="col col-lg-3">
+        <a href="#" class="thumbnail">
+          <h3 class="text-center">Points</h3>
+        </a>
+      </div>
+      <div class="col col-lg-3">
+        <a href="#" class="thumbnail">
+          <h3 class="text-center">Lines</h3>
+        </a>
+      </div>
+      <div class="col col-lg-3">
+        <a href="#" class="thumbnail">
+          <h3 class="text-center">Angles</h3>
+        </a>
+      </div>
+      <div class="col col-lg-3">
+        <a href="#" class="thumbnail">
+          <h3 class="text-center">Triangles</h3>
+        </a>
+      </div>
+      <div class="col col-lg-3">
+        <a href="#" class="thumbnail">
+          <h3 class="text-center">Quadrilaterals</h3>
+        </a>
+      </div>
+      <div class="col col-lg-3">
+        <a href="#" class="thumbnail">
+          <h3 class="text-center">Polygons</h3>
+        </a>
+      </div>
+      <div class="col col-lg-3">
+        <a href="#" class="thumbnail">
+          <h3 class="text-center">Circles</h3>
+        </a>
+      </div>
+      <div class="col col-lg-3">
+        <a href="#" class="thumbnail">
+          <h3 class="text-center">Solids</h3>
+        </a>
+      </div>
+      <div class="col col-lg-3">
+        <a href="#" class="thumbnail">
+          <h3 class="text-center">Coordinate Geometry</h3>
+          <h4 class="text-center">Slope</h4>
+        </a>
+      </div>
+      <div class="col col-lg-3">
+        <a href="#" class="thumbnail">
+          <h3 class="text-center">Coordinate Geometry</h3>
+          <h4 class="text-center">Midpoints</h4>
+        </a>
+      </div>
+      <div class="col col-lg-3">
+        <a href="#" class="thumbnail">
+          <h3 class="text-center">Coordinate Geometry</h3>
+          <h4 class="text-center">Distance</h4>
+        </a>
+      </div>
+      <div class="col col-lg-3">
+        <a href="#" class="thumbnail">
+          <h3 class="text-center">Geometric Perception</h3>
+        </a>
+      </div>
+      <div class="col col-lg-3">
+        <a href="#" class="thumbnail">
+          <h3 class="text-center">Transformations</h3>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- Data, Statistics, and Probability
+  ================================================== -->
+  <div class="sub-section" id="data-statistics-probability">
+    <div class="page-header">
+      <h1>Data, Statistics, and Probability</h1>
+    </div>
+    <p class="lead">Get the lowdown on the key pieces of Bootstrap's infrastructure, including our approach to better, faster, stronger web development.</p>
+
+    <h2>Inline</h2>
+  <div class="panel">
+    <div class="row">
+      <div class="col col-lg-3">
+        <a href="#" class="thumbnail">
+          <h3 class="text-center">Data Interpretation</h3>
+          <h4 class="text-center">Charts, Graphs, Tables, Plots</h4>
+        </a>
+      </div>
+      <div class="col col-lg-3">
+        <a href="#" class="thumbnail">
+          <h3 class="text-center">Statistics</h3>
+          <h4 class="text-center">Mean, Median, Mode</h4>
+        </a>
+      </div>
+      <div class="col col-lg-3">
+        <a href="#" class="thumbnail">
+          <h3 class="text-center">Averages</h3>
+        </a>
+      </div>
+      <div class="col col-lg-3">
+        <a href="#" class="thumbnail">
+          <h3 class="text-center">Probability</h3>
+          <h4 class="text-center">Independent/Dependent Events, Geometric</h4>
+        </a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+  <!-- SAT Critical Reading
+  ================================================== -->
+
+  <div class="sub-section-header" id="sat-reading">
+    <h1>SAT Critical Reading</h1>
+    <p class="lead">Marathon. One macro strategy. 67 questions.</p>
+  </div>
+
+  <!-- Getting started
+  ================================================== -->
+  <div class="sub-section" id="sat-reading-overview">
+    <div class="page-header">
+      <h1>Overview</h1>
+    </div>
+    <p class="lead">There are a few easy ways to quickly get started with Bootstrap, each one appealing to a different skill level and use case. Read through to see what suits your particular needs.</p>
+    <h3>Download compiled CSS and JS</h3>
+    <p class="lead">The fastest way to get started is to get the compiled and minified versions of our CSS, JavaScript, and fonts. No documentation or original source files are included.</p>
+    <p><a class="btn btn-large btn-primary" href="assets/bootstrap.zip" onclick="_gaq.push(['_trackEvent', 'Getting started', 'Download', 'Download compiled']);">Download Bootstrap</a></p>
+
+    <hr>
+
+  <!-- Sentence Completion
+  ================================================== -->
+  <div class="sub-section" id="sentence-completion">
+    <div class="page-header">
+      <h1>Sentence Completion</h1>
+    </div>
+    <p class="lead">Toggleable, contextual menu for displaying lists of links. Made interactive with the dropdown JavaScript plugin</a>.</p>
+
+  <div class="panel">
+    <div class="row">
+      <div class="col col-lg-3">
+        <a href="#" class="thumbnail">
+          <h3 class="text-center">One Blank</h3>
+        </a>
+      </div>
+      <div class="col col-lg-3">
+        <a href="#" class="thumbnail">
+          <h3 class="text-center">Two Blanks</h3>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="sub-section" id="vocabulary">
+    <div class="page-header">
+      <h1>Vocabulary</h1>
+    </div>
+    <p class="lead">Toggleable, contextual menu for displaying lists of links. Made interactive with the dropdown JavaScript plugin</a>.</p>
+
+  <div class="panel">
+    <div class="row">
+      <div class="col col-lg-3">
+        <a href="#" class="thumbnail">
+          <h3 class="text-center">Word</h3>
+        </a>
+      </div>
+      <div class="col col-lg-3">
+        <a href="#" class="thumbnail">
+          <h3 class="text-center">Word</h3>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+
+  <!-- Passage-based Reading
+  ================================================== -->
+  <div class="sub-section" id="passage-based-reading">
+    <div class="page-header">
+      <h1>Passage-based Reading</h1>
+    </div>
+    <p class="lead">Group a series of buttons together on a single line with the button group. Add on optional JavaScript radio and checkbox style</p>
+
+    <h2 id="passages">Passages</h2>
+    <p>Wrap the dropdown's trigger and the dropdown menu within <code>.dropdown</code>, or another element that declares <code>position: relative;</code>. Then add the menu's HTML.</p>
+
+  <div class="panel">
+    <div class="row">
+      <div class="col col-lg-3">
+        <a href="#" class="thumbnail">
+          <h3 class="text-center">Paragraph</h3>
+        </a>
+      </div>
+      <div class="col col-lg-3">
+        <a href="#" class="thumbnail">
+          <h3 class="text-center">Passage 1, Passage 2</h3>
+        </a>
+      </div>
+    </div>
+  </div>
+
+    <h2 id="passage-questions">Passage-based Questions</h2>
+    <p>Wrap the dropdown's trigger and the dropdown menu within <code>.dropdown</code>, or another element that declares <code>position: relative;</code>. Then add the menu's HTML.</p>
+
+  <div class="panel">
+    <div class="row">
+      <div class="col col-lg-3">
+        <a href="#" class="thumbnail">
+          <h3 class="text-center">Main Idea</h3>
+        </a>
+      </div>
+      <div class="col col-lg-3">
+        <a href="#" class="thumbnail">
+          <h3 class="text-center">Line Reference</h3>
+        </a>
+      </div>
+      <div class="col col-lg-3">
+        <a href="#" class="thumbnail">
+          <h3 class="text-center">Tone</h3>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+
+  <!-- SAT Writing
+  ================================================== -->
+
+  <div class="sub-section-header" id="sat-writing">
+    <h1>SAT Writing</h1>
+  </div>
+
+  <!-- Getting started
+  ================================================== -->
+  <div class="sub-section" id="sat-writing-overview">
+    <div class="page-header">
+      <h1>Overview</h1>
+    </div>
+    <p class="lead">There are a few easy ways to quickly get started with Bootstrap, each one appealing to a different skill level and use case. Read through to see what suits your particular needs.</p>
+    <h3>Download compiled CSS and JS</h3>
+    <p class="lead">The fastest way to get started is to get the compiled and minified versions of our CSS, JavaScript, and fonts. No documentation or original source files are included.</p>
+    <p><a class="btn btn-large btn-primary" href="assets/bootstrap.zip" onclick="_gaq.push(['_trackEvent', 'Getting started', 'Download', 'Download compiled']);">Download Bootstrap</a></p>
+
+    <hr>
+
+
+  <!-- Essay
+  ================================================== -->
+  <div class="sub-section" id="essay">
+    <div class="page-header">
+      <h1>Essay</h1>
+    </div>
+      <p class="lead">There are a few easy ways to quickly get started with Bootstrap, each one appealing to a different skill level and use case. Read through to see what suits your particular needs.</p>
+    </div>
+
+    <div class="panel">
+      <div class="row">
+        <div class="col col-lg-3">
+          <a href="#" class="thumbnail">
+            <h3 class="text-center">Main Idea</h3>
+          </a>
+        </div>
+        <div class="col col-lg-3">
+          <a href="#" class="thumbnail">
+            <h3 class="text-center">Line Reference</h3>
+          </a>
+        </div>
+        <div class="col col-lg-3">
+          <a href="#" class="thumbnail">
+            <h3 class="text-center">Tone</h3>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Improving Sentences
+  ================================================== -->
+  <div class="sub-section" id="improving-sentences">
+    <div class="page-header">
+      <h1>Improving Sentences</h1>
+    </div>
+      <p class="lead">There are a few easy ways to quickly get started with Bootstrap, each one appealing to a different skill level and use case. Read through to see what suits your particular needs.</p>
+    </div>
+
+    <div class="panel">
+      <div class="row">
+        <div class="col col-lg-3">
+          <a href="#" class="thumbnail">
+            <h3 class="text-center">Main Idea</h3>
+          </a>
+        </div>
+        <div class="col col-lg-3">
+          <a href="#" class="thumbnail">
+            <h3 class="text-center">Line Reference</h3>
+          </a>
+        </div>
+        <div class="col col-lg-3">
+          <a href="#" class="thumbnail">
+            <h3 class="text-center">Tone</h3>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Identifying Sentence Errors
+  ================================================== -->
+  <div class="sub-section" id="identifying-sentence-errors">
+    <div class="page-header">
+      <h1>Identifying Sentence Errors</h1>
+    </div>
+      <p class="lead">There are a few easy ways to quickly get started with Bootstrap, each one appealing to a different skill level and use case. Read through to see what suits your particular needs.</p>
+    </div>
+
+    <div class="panel">
+      <div class="row">
+        <div class="col col-lg-3">
+          <a href="#" class="thumbnail">
+            <h3 class="text-center">Main Idea</h3>
+          </a>
+        </div>
+        <div class="col col-lg-3">
+          <a href="#" class="thumbnail">
+            <h3 class="text-center">Line Reference</h3>
+          </a>
+        </div>
+        <div class="col col-lg-3">
+          <a href="#" class="thumbnail">
+            <h3 class="text-center">Tone</h3>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Improving Paragraphs
+  ================================================== -->
+  <div class="sub-section" id="improving-paragraphs">
+    <div class="page-header">
+      <h1>Improving Paragraphs</h1>
+    </div>
+      <p class="lead">There are a few easy ways to quickly get started with Bootstrap, each one appealing to a different skill level and use case. Read through to see what suits your particular needs.</p>
+    </div>
+
+
+    <div class="panel">
+      <div class="row">
+        <div class="col col-lg-3">
+          <a href="#" class="thumbnail">
+            <h3 class="text-center">Main Idea</h3>
+          </a>
+        </div>
+        <div class="col col-lg-3">
+          <a href="#" class="thumbnail">
+            <h3 class="text-center">Line Reference</h3>
+          </a>
+        </div>
+        <div class="col col-lg-3">
+          <a href="#" class="thumbnail">
+            <h3 class="text-center">Tone</h3>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+</div><!-- /.container -->
+
+<a href="#sat" class="bs-docs-top">
+  Back to top
+</a>
+
+
+
+    <!-- Main docs footer (social buttons, copyright, etc). -->
+    <!-- Footer
+================================================== -->
+<footer class="sub-footer">
+  <div class="sub-container">
+
+    <div class="sub-social">
+      <ul class="sub-social-buttons">
+        <li>
+          <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=twitter&repo=bootstrap&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
+        </li>
+        <li>
+          <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=twitter&repo=bootstrap&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="102px" height="20px"></iframe>
+        </li>
+        <li class="follow-btn">
+          <a href="https://twitter.com/twbootstrap" class="twitter-follow-button" data-link-color="#0069D6" data-show-count="true">Follow @twbootstrap</a>
+        </li>
+        <li class="tweet-btn">
+          <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://twitter.github.com/bootstrap/" data-count="horizontal" data-via="twbootstrap" data-related="mdo:Creator of Twitter Bootstrap">Tweet</a>
+        </li>
+      </ul>
+    </div>
+
+
+    <p>Designed and built with all the love in the world by <a href="http://twitter.com/mdo" target="_blank">@mdo</a> and <a href="http://twitter.com/fat" target="_blank">@fat</a>.</p>
+    <p>Code licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+    <p><a href="http://glyphicons.com">Glyphicons Free</a> licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+    <ul class="footer-links">
+      <li><a href="http://blog.getbootstrap.com">Blog</a></li>
+      <li class="muted">&middot;</li>
+      <li><a href="https://github.com/twitter/bootstrap/issues?state=open">Issues</a></li>
+      <li class="muted">&middot;</li>
+      <li><a href="https://github.com/twitter/bootstrap/blob/master/CHANGELOG.md">Changelog</a></li>
+    </ul>
+  </div>
+</footer>
+
+
+    <!-- JS and analytics only. -->
+    <script> 
+  // categoryRows custom layout mode
+  $.extend( $.Isotope.prototype, {
+  
+    _categoryRowsReset : function() {
+      this.categoryRows = {
+        x : 0,
+        y : 0,
+        height : 0,
+        currentCategory : null
+      };
+    },
+  
+    _categoryRowsLayout : function( $elems ) {
+      var instance = this,
+          containerWidth = this.element.width(),
+          sortBy = this.options.sortBy,
+          props = this.categoryRows;
+      
+      $elems.each( function() {
+        var $this = $(this),
+            atomW = $this.outerWidth(true),
+            atomH = $this.outerHeight(true),
+            category = $.data( this, 'isotope-sort-data' )[ sortBy ],
+            x, y;
+      
+        if ( category !== props.currentCategory ) {
+          // new category, new row
+          props.x = 0;
+          props.height += props.currentCategory ? instance.options.categoryRows.gutter : 0;
+          props.y = props.height;
+          props.currentCategory = category;
+        } else if ( props.x !== 0 && atomW + props.x > containerWidth ) {
+          // if this element cannot fit in the current row
+          props.x = 0;
+          props.y = props.height;
+        } 
+      
+        // position the atom
+        instance._pushPosition( $this, props.x, props.y );
+  
+        props.height = Math.max( props.y + atomH, props.height );
+        props.x += atomW;
+  
+      });
+    },
+  
+    _categoryRowsGetContainerSize : function () {
+      return { height : this.categoryRows.height };
+    },
+  
+    _categoryRowsResizeChanged : function() {
+      return true;
+    }
+  
+  });
+  
+  $(function(){
+    
+    var $container = $('#container');
+    
+    
+      // add randomish size classes
+      $container.find('.element').each(function(){
+        var $this = $(this),
+            number = parseInt( $this.find('.number').text(), 10 );
+        if ( number % 7 % 2 === 1 ) {
+          $this.addClass('width2');
+        }
+        if ( number % 3 === 0 ) {
+          $this.addClass('height2');
+        }
+      });
+    
+    $container.isotope({
+      itemSelector : '.element',
+      layoutMode : 'categoryRows',
+      categoryRows : {
+        gutter : 20
+      },
+      getSortData : {
+        category : function( $elem ) {
+          return $elem.attr('data-category');
+        }
+      },
+      sortBy: 'category'
+    });
+
+    
+      var $optionSets = $('#options .option-set'),
+          $optionLinks = $optionSets.find('a');
+
+      $optionLinks.click(function(){
+        var $this = $(this);
+        // don't proceed if already selected
+        if ( $this.hasClass('selected') ) {
+          return false;
+        }
+        var $optionSet = $this.parents('.option-set');
+        $optionSet.find('.selected').removeClass('selected');
+        $this.addClass('selected');
+  
+        // make option object dynamically, i.e. { filter: '.my-filter-class' }
+        var options = {},
+            key = $optionSet.attr('data-option-key'),
+            value = $this.attr('data-option-value');
+        // parse 'false' as false boolean
+        value = value === 'false' ? false : value;
+        options[ key ] = value;
+        if ( key === 'layoutMode' && typeof changeLayoutMode === 'function' ) {
+          // changes in layout modes need extra logic
+          changeLayoutMode( $this, options )
+        } else {
+          // otherwise, apply new options
+          $container.isotope( options );
+        }
+        
+        return false;
+      });
+
+
+    
+      $('#insert a').click(function(){
+        var $newEls = $( fakeElement.getGroup() );
+        $container.isotope( 'insert', $newEls );
+
+        return false;
+      });
+
+      $('#append a').click(function(){
+        var $newEls = $( fakeElement.getGroup() );
+        $container.append( $newEls ).isotope( 'appended', $newEls );
+
+        return false;
+      });
+
+
+    // toggle variable sizes of all elements
+    $('#toggle-sizes').find('a').click(function(){
+      $container
+        .toggleClass('variable-sizes')
+        .isotope('reLayout');
+      return false;
+    });
+
+  });
+</script>
+  
+
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="/assets/js/jquery.js"></script>
+<script src="/assets/js/bootstrap-transition.js"></script>
+<script src="/assets/js/bootstrap-alert.js"></script>
+<script src="/assets/js/bootstrap-modal.js"></script>
+<script src="/assets/js/bootstrap-dropdown.js"></script>
+<script src="/assets/js/bootstrap-scrollspy.js"></script>
+<script src="/assets/js/bootstrap-tab.js"></script>
+<script src="/assets/js/bootstrap-tooltip.js"></script>
+<script src="/assets/js/bootstrap-popover.js"></script>
+<script src="/assets/js/bootstrap-button.js"></script>
+<script src="/assets/js/bootstrap-collapse.js"></script>
+<script src="/assets/js/bootstrap-carousel.js"></script>
+<script src="/assets/js/bootstrap-typeahead.js"></script>
+<script src="/assets/js/bootstrap-affix.js"></script>
+
+<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+<script src="/assets/js/holder/holder.js"></script>
+
+<script src="/assets/js/application.js"></script>
+
+<script src="/assets/js/jquery.isotope.js"></script>
+<!-- Analytics
+================================================== -->
+<script>
+  var _gauges = _gauges || [];
+  (function() {
+    var t   = document.createElement('script');
+    t.type  = 'text/javascript';
+    t.async = true;
+    t.id    = 'gauges-tracker';
+    t.setAttribute('data-site-id', '4f0dc9fef5a1f55508000013');
+    t.src = '//secure.gaug.es/track.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(t, s);
+  })();
+</script>
+
+
+  </body>
+</html>
