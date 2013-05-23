@@ -2,22 +2,22 @@
 <html lang="en">
   <head>
     <!-- Meta, title, CSS, favicons, etc. -->
-    {% include header.html %}
+    {% include sub-header.html %}
     <!-- Place anything custom after this. -->
   </head>
-  <body class="bs-docs-docs" data-spy="scroll" data-target=".bs-docs-sidebar">
+  <body class="sub-docs" data-spy="scroll" data-target=".sub-sidebar">
 
     <!-- Docs nav -->
-    {% include docs-nav.html %}
+    {% include sub-nav.html %}
 
     <!-- Page content of course! -->
     {{ content }}
 
     <!-- Main docs footer (social buttons, copyright, etc). -->
-    {% include colophon.html %}
+    {% include sub-colophon.html %}
 
     <!-- JS and analytics only. -->
-    {% include footer.html %}
+    {% include sub-footer.html %}
 
   </body>
 </html>
