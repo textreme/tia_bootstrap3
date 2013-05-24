@@ -1,3 +1,10 @@
+/*
+ * Bootstrap Documentation
+ * Special styles for presenting Bootstrap's documentation and code examples.
+ */
+
+
+
 /* Key scaffolding
 -------------------------------------------------- */
 
@@ -11,7 +18,13 @@ hr {
   margin-bottom: 30px;
 }
 
-.sub-container {
+.bs-docs-dl-options h4 {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.sub-container,
+.bs-home-container {
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -27,8 +40,8 @@ hr {
 .sub-sidenote {
   margin: 20px 0;
   padding: 15px 30px 15px 15px;
-  background-color: rgba(0, 230, 255, .4);
-  border-left: 5px solid #007c89;
+  background-color: #fcf2f2;
+  border-left: 5px solid #df7c7b;
 }
 .sub-sidenote h4 {
   margin-top: 0;
@@ -41,13 +54,6 @@ hr {
   background-color: #fff;
 }
 
-.glyphicon {
-  display: block;
-  margin: 5px auto;
-  vertical-align: middle;
-  margin-right: 3px;
-  font-size: 24px;
-}
 
 /* Sections
 -------------------------------------------------- */
@@ -74,8 +80,8 @@ section > ul li {
 
 .sub-section-header {
   padding-top: 60px;
-  color: #333;
-  border-bottom: 5px solid #4FB;
+  color: #b94a48;
+  border-bottom: 5px solid #b94a48;
 }
 
 /* Base class */
@@ -121,6 +127,25 @@ section > ul li {
 }
 
 
+
+/* Special grid styles
+-------------------------------------------------- */
+
+.show-grid {
+  margin-bottom: 15px;
+}
+.show-grid .col {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #eee;
+  border: 1px solid #ddd;
+}
+.show-grid .col:hover {
+  background-color: #ddd;
+}
+
+
+
 /* Sidenav
 -------------------------------------------------- */
 
@@ -129,7 +154,7 @@ section > ul li {
   position: relative;
   width: 100%;
   text-shadow: 0 1px 0 #fff;
-  background-color: #FFF;
+  background-color: #f5f5f5;
   box-shadow: inset -1px 0 0 #e5e5e5;
 }
 
@@ -151,9 +176,9 @@ section > ul li {
 .sub-sidebar .nav > .active:hover > a,
 .sub-sidebar .nav > .active:focus > a {
   font-weight: 500;
-  color: #4FB;
+  color: #b94a48;
   background-color: transparent;
-  border-right: 1px solid #4FB;
+  border-right: 1px solid #b94a48;
 }
 
 /* Nav: second level (shown on .active) */
@@ -177,12 +202,12 @@ section > ul li {
 .sub-sidenav-heading a {
   display: block;
   padding: 15px 25px;
-  color: #333;
+  color: #b94a48;
   border-bottom: 1px solid #e5e5e5;
   box-shadow: 0 1px 0 #fff;
 }
 .sub-sidenav-heading a:hover {
-  color: #4FB;
+  color: #a3403e;
   text-decoration: none;
 }
 
@@ -199,6 +224,206 @@ section > ul li {
   color: #333;
   border-color: #333;
 }
+
+
+
+/* Bootstrap code examples
+-------------------------------------------------- */
+
+/* Base class */
+.bs-docs-example {
+  position: relative;
+  padding: 39px 14px 14px;
+  margin-bottom: -1px;
+  border: 1px solid #ddd;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+/* Echo out a label for the example */
+.bs-docs-example:after {
+  content: "Example";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #9da0a4;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-top-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+/* Tweak display of the examples */
+.bs-docs-example + .prettyprint,
+.bs-docs-example + .highlight {
+  margin-top: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+/* Tweak content of examples for optimum awesome */
+.bs-docs-example > p:last-child,
+.bs-docs-example > ul:last-child,
+.bs-docs-example > ol:last-child,
+.bs-docs-example > blockquote:last-child,
+.bs-docs-example > input:last-child,
+.bs-docs-example > select:last-child,
+.bs-docs-example > textarea:last-child,
+.bs-docs-example > .table:last-child,
+.bs-docs-example > .jumbotron:last-child,
+.bs-docs-example > .alert:last-child,
+.bs-docs-example > .panel:last-child,
+.bs-docs-example > .list-group:last-child,
+.bs-docs-example > .well:last-child {
+  margin-bottom: 0;
+}
+
+/* Typography */
+.bs-docs-example-type .table td {
+  color: #999;
+  vertical-align: middle;
+  border-color: ;
+}
+.bs-docs-example-type .table td,
+.bs-docs-example-type .table th {
+  padding: 15px 0;
+  border-color: #eee;
+}
+.bs-docs-example-type .table tr:first-child td,
+.bs-docs-example-type .table tr:first-child th {
+  border-top: 0;
+}
+.bs-docs-example-type h1,
+.bs-docs-example-type h2,
+.bs-docs-example-type h3,
+.bs-docs-example-type h4,
+.bs-docs-example-type h5,
+.bs-docs-example-type h6 {
+  margin: 0;
+}
+
+/* List groups */
+.bs-docs-example > .list-group {
+  max-width: 400px;
+}
+
+/* Navbar examples */
+.bs-navbar-top-example,
+.bs-navbar-bottom-example {
+  z-index: 1;
+  padding: 0;
+  min-height: 110px;
+  overflow: hidden; /* cut the drop shadows off */
+}
+.bs-navbar-top-example .navbar-fixed-top,
+.bs-navbar-bottom-example .navbar-fixed-bottom {
+  position: relative;
+  margin-left: 0;
+  margin-right: 0;
+}
+.bs-navbar-top-example .navbar-fixed-top {
+  top: -1px;
+}
+.bs-navbar-bottom-example .navbar-fixed-bottom {
+  bottom: -1px;
+}
+.bs-navbar-top-example {
+  -webkit-border-radius: 0 0 4px 4px;
+     -moz-border-radius: 0 0 4px 4px;
+          border-radius: 0 0 4px 4px;
+}
+.bs-navbar-top-example:after {
+  top: auto;
+  bottom: -1px;
+  -webkit-border-radius: 0 4px 0 4px;
+     -moz-border-radius: 0 4px 0 4px;
+          border-radius: 0 4px 0 4px;
+}
+.bs-navbar-bottom-example {
+  -webkit-border-radius: 4px 4px 0 0;
+     -moz-border-radius: 4px 4px 0 0;
+          border-radius: 4px 4px 0 0;
+}
+.bs-navbar-bottom-example .navbar {
+  margin-bottom: 0;
+}
+
+/* Example modals */
+.bs-docs-example-modal {
+  background-color: #f5f5f5;
+}
+.bs-docs-example-modal .modal {
+  position: relative;
+  top: auto;
+  right: auto;
+  left: auto;
+  bottom: auto;
+  z-index: 1;
+  display: block;
+}
+.bs-docs-example-modal .modal-dialog {
+  left: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Example dropdowns */
+.bs-docs-example > .dropdown > .dropdown-menu,
+.bs-docs-example-submenu > .pull-left > .dropup > .dropdown-menu,
+.bs-docs-example-submenu > .pull-left > .dropdown > .dropdown-menu {
+  position: static;
+  display: block;
+  margin-bottom: 5px;
+}
+.bs-docs-example-submenu {
+  min-height: 230px;
+}
+.bs-docs-example-submenu > .pull-left + .pull-left {
+  margin-left: 20px;
+}
+
+/* Example tabbable tabs */
+.bs-docs-example-tabs .nav-tabs {
+  margin-bottom: 15px;
+}
+
+/* Tooltips */
+.bs-docs-tooltip-examples {
+  text-align: center;
+  margin: 0 0 10px;
+  list-style: none;
+}
+.bs-docs-tooltip-examples li {
+  display: inline;
+  padding: 0 10px;
+}
+
+/* Popovers */
+.bs-docs-example-popover {
+  padding-bottom: 24px;
+  background-color: #f9f9f9;
+}
+.bs-docs-example-popover .popover {
+  position: relative;
+  display: block;
+  float: left;
+  width: 260px;
+  margin: 20px;
+}
+
+
+/* Example templates
+-------------------------------------------------- */
+
+.bs-docs-examples h4 {
+  margin-bottom: 5px;
+}
+.bs-docs-examples p {
+  margin-bottom: 20px;
+}
+
 
 
 /* Icons
@@ -225,10 +450,92 @@ section > ul li {
           box-sizing: border-box;
   margin: 0 -1px -1px 0;
 }
-
+.the-icons .glyphicon {
+  display: block;
+  margin: 5px auto;
+  vertical-align: middle;
+  margin-right: 3px;
+  font-size: 24px;
+}
 .the-icons li:hover {
   background-color: rgba(255,0,0,.1);
 }
+
+
+
+/* Responsive docs
+-------------------------------------------------- */
+
+/* Related: responsive utilities tables */
+.table code {
+  font-size: 13px;
+  font-weight: normal;
+}
+
+/* Utility classes table
+------------------------- */
+.responsive-utilities th small {
+  display: block;
+  font-weight: normal;
+  color: #999;
+}
+.responsive-utilities tbody th {
+  font-weight: normal;
+}
+.responsive-utilities td {
+  text-align: center;
+}
+.responsive-utilities td.is-visible {
+  color: #468847;
+  background-color: #dff0d8 !important;
+}
+.responsive-utilities td.is-hidden {
+  color: #ccc;
+  background-color: #f9f9f9 !important;
+}
+
+/* Responsive tests
+------------------------- */
+.responsive-utilities-test {
+  margin-top: 5px;
+  margin-left: 0;
+  list-style: none;
+  overflow: hidden; /* clear floats */
+}
+.responsive-utilities-test li {
+  position: relative;
+  float: left;
+  width: 25%;
+  height: 43px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 43px;
+  color: #999;
+  text-align: center;
+  border: 1px solid #ddd;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+.responsive-utilities-test li + li {
+  margin-left: 10px;
+}
+.responsive-utilities-test span {
+  position: absolute;
+  top:    -1px;
+  left:   -1px;
+  right:  -1px;
+  bottom: -1px;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+.responsive-utilities-test span {
+  color: #468847;
+  background-color: #dff0d8;
+  border: 1px solid #d6e9c6;
+}
+
 
 
 /* Footer
@@ -242,7 +549,7 @@ section > ul li {
 }
 .sub-footer p {
   margin-bottom: 0;
-  color: #333;
+  color: #777;
 }
 .footer-links {
   margin: 10px 0;
@@ -294,6 +601,52 @@ input.focused {
        box-shadow: 0 0 8px rgba(82,168,236,.6);
 }
 
+/* Scrollspy demo on fixed height div */
+.scrollspy-example {
+  position: relative;
+  height: 200px;
+  margin-top: 10px;
+  overflow: auto;
+}
+
+.highlight {
+  padding: 9px 14px;
+  margin-bottom: 14px;
+  background-color: #f7f7f9;
+  border: 1px solid #e1e1e8;
+  border-radius: 4px;
+}
+.highlight pre {
+  padding: 0;
+  margin-bottom: 0;
+  background-color: transparent;
+  border: 0;
+  white-space: nowrap;
+}
+.highlight pre code {
+  font-size: inherit;
+  color: #333; /* Effectively the base text color */
+}
+.highlight pre .lineno {
+  display: inline-block;
+  width: 22px;
+  padding-right: 5px;
+  margin-right: 10px;
+  text-align: right;
+  color: #bebec5;
+}
+
+
+
+/* Docs gallery
+-------------------------------------------------- */
+
+.bs-docs-gallery .thumbnail {
+  max-width: 400px;
+  margin: 0 auto 20px;
+}
+
+
 /* Responsive variations
 -------------------------------------------------- */
 
@@ -312,18 +665,17 @@ input.focused {
 
   /* Back to top link */
   .bs-docs-top {
-    text-align: center;
     float: left;
     padding: 7px 15px;
     font-weight: 500;
-    color: #333;
-    background-color: transparent;
+    color: #999;
+    background-color: #eee;
     border-radius: 4px;
   }
   .bs-docs-top:hover {
-    color: #4fb;
+    color: #fff;
     text-decoration: none;
-    background-color: transparent;
+    background-color: #999;
   }
   .bs-docs-top.affix {
     position: fixed;
@@ -342,6 +694,11 @@ input.focused {
     padding-left: 260px;
     padding-right: 40px;
   }
+
+  /*.sub-lesson {
+  padding-left: 40px;
+  padding-right: 40px;
+  }*/
 
   /* Undo custom padding */
   .sub-container {
@@ -407,3 +764,34 @@ input.focused {
   }
 
 }
+
+.lesson-space {
+  border: 1px solid #000000;
+  height: auto;
+}
+
+.sub-lesson-space {
+  background: #5cfff8;
+}
+
+.nav1 {
+  border: 1px solid #e32aff;
+}
+
+.nav2 {
+  border: 1px solid #00cbff;  
+}
+
+.svg {
+  display: block;
+  margin: 0 auto;
+}
+
+.bar2 {
+  margin: 0 auto;
+}
+
+.sub-lesson-navbar {
+  margin: 0 auto;
+ }
+
